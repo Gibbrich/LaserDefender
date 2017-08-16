@@ -23,8 +23,7 @@ public class EnemySpawner : MovementController
         }
     }
 
-    // Update is called once per frame
-    private void Update()
+    protected override void Move()
     {
         if (isMovingRight)
         {
@@ -38,9 +37,13 @@ public class EnemySpawner : MovementController
         float rightEdgeOfFormation = transform.position.x + width / 2;
         float leftEdgeOfFormation = transform.position.x - width / 2;
 
-        if (leftEdgeOfFormation < xMin || rightEdgeOfFormation > xMax)
+        if (leftEdgeOfFormation < xMin)
         {
-            isMovingRight = !isMovingRight;
+            isMovingRight = true;
+        }
+        else if (rightEdgeOfFormation > xMax)
+        {
+            isMovingRight = false;
         }
     }
 

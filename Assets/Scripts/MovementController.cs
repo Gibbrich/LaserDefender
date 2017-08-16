@@ -22,5 +22,12 @@ public abstract class MovementController : MonoBehaviour
         CalculateWidth();
     }
 
+    protected virtual void Update()
+    {
+        Move();
+    }
+
+    protected abstract void Move();
+
     protected abstract void CalculateWidth();
 }

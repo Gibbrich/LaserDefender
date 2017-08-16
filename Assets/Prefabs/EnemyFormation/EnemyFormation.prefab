@@ -246,8 +246,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a45ba4a257936941bb55216ddee9680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 5
   enemyPrefab: {fileID: 1208674928551062, guid: 8bb25c73940d55b4d81995441e16d29b,
     type: 2}
+  EnemySpawnerWidth: 10
+  EnemySpawnerHeight: 5
 --- !u!114 &114884979013896176
 MonoBehaviour:
   m_ObjectHideFlags: 1
