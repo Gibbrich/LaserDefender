@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float Damage = 100f;
+    [SerializeField]
+    protected float damage = 100f;
+
+    public float Damage
+    {
+        get { return damage; }
+        set { damage = value; }
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -13,5 +21,10 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void Hit()
+    {
+        Destroy(gameObject);
     }
 }

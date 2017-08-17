@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212130679610880424}
   - component: {fileID: 50914076711366448}
   - component: {fileID: 61985965097055280}
-  - component: {fileID: 114652678396712442}
+  - component: {fileID: 114607257893990132}
   m_Layer: 0
-  m_Name: LaserShoot
+  m_Name: EnemyLaserShoot
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.54}
   m_EdgeRadius: 0
---- !u!114 &114652678396712442
+--- !u!114 &114607257893990132
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,9 +96,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960320815503604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67f70c8daf54064ea478de2735e8fca, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e816f4cd1554821b701fa52bed6a8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
 --- !u!212 &212130679610880424
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -131,10 +132,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a8cef74f486d74c4f81abcbfbc49a6ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b1ad9c2b1e20274ab16d908fc314383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 0.09, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
