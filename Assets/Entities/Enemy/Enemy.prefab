@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 60573811951568914}
   - component: {fileID: 50015743509196482}
   - component: {fileID: 114765724214529606}
-  m_Layer: 0
+  - component: {fileID: 95831764092699774}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +100,23 @@ PolygonCollider2D:
       - {x: -0.48158756, y: 0.16012812}
       - {x: -0.25292957, y: -0.4183966}
       - {x: -0.09811899, y: -0.38757205}
+--- !u!95 &95831764092699774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208674928551062}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 103b1c04c7bdbbc48937cad1f6138972, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114765724214529606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,8 +131,7 @@ MonoBehaviour:
   Health: 150
   Projectile: {fileID: 1960320815503604, guid: 6d970eadb60e5824d98a2ad7462bff19, type: 2}
   ProjectileSpeed: 5
-  FiringRateMin: 1
-  FiringRateMax: 3
+  ShotsPerSecond: 0.5
 --- !u!212 &212284257374943820
 SpriteRenderer:
   m_ObjectHideFlags: 1

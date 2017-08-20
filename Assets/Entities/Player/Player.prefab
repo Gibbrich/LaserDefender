@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4448717289461914}
   - component: {fileID: 212884798319036412}
+  - component: {fileID: 50367250326562316}
   - component: {fileID: 60307077177844786}
   - component: {fileID: 114333171704658830}
   - component: {fileID: 114117687390965026}
-  - component: {fileID: 50367250326562316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}

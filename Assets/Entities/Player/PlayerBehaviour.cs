@@ -3,15 +3,6 @@
 public class PlayerBehaviour : CombatBehaviour
 {
     public float FiringRate = 0.2f;
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        EnemyProjectile missle = other.GetComponent<EnemyProjectile>();
-        if (missle)
-        {
-            TakeHit(missle);
-        }
-    }
 
     protected override void Shoot()
     {
@@ -23,11 +14,6 @@ public class PlayerBehaviour : CombatBehaviour
         {
             CancelInvoke("Fire");
         }
-    }
-
-    private void Update()
-    {
-        Shoot();
     }
 
     private void Fire()

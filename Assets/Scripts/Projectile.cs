@@ -13,16 +13,6 @@ public class Projectile : MonoBehaviour
         set { damage = value; }
     }
 
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void Hit()
     {
         Destroy(gameObject);

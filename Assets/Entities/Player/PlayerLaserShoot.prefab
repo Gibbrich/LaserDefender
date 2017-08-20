@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212130679610880424}
   - component: {fileID: 50914076711366448}
   - component: {fileID: 61985965097055280}
-  - component: {fileID: 114290546958975412}
-  m_Layer: 0
+  - component: {fileID: 114723586364923942}
+  m_Layer: 11
   m_Name: PlayerLaserShoot
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.54}
   m_EdgeRadius: 0
---- !u!114 &114290546958975412
+--- !u!114 &114723586364923942
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960320815503604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6172432d188b4508848e81b439c21166, type: 3}
+  m_Script: {fileID: 11500000, guid: a67f70c8daf54064ea478de2735e8fca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
