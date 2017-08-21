@@ -21,5 +21,17 @@ public class PlayerBehaviour : CombatBehaviour
         GameObject laserShoot = Instantiate(Projectile, new Vector3(transform.position.x, transform.position.y + 0.75f),
             Quaternion.identity);
         laserShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(0, ProjectileSpeed);
+        source.Play();
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+        
+        OnDestroyHandler += () =>
+        {
+            AudioSource.PlayClipAtPoint(explosionSFX, transform.position);
+            FindObjectOfType<LevelManager>().LoadLevel("Win Screen");
+        };
     }
 }
